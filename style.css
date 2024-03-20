@@ -1,0 +1,504 @@
+body {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 0vi;
+  margin: 0vi;
+  font-family: "Poppins";
+}
+
+.rooter {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.navframe {
+  flex: 25%;
+  height: 96vh;
+  overflow: auto;
+  padding: 2rem;
+  margin: 1vi 1vi 1vi 0;
+  border-radius: 1vi;
+  background-color: rgba(243, 243, 243, 1);
+}
+.navframe::-webkit-scrollbar {
+  display: none;
+}
+.dataframe {
+  flex: 50%;
+  height: 96vh;
+  margin: 1vi 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .img1 {
+  padding: 2vi 0.4vi;
+}
+
+nav .img2 {
+  padding: 2vi 0.7vi;
+}
+
+.title h2 {
+  font-weight: 900;
+  margin: 1.4vi 0vi 0vi 0vi;
+  padding: 0vi;
+}
+
+.title p {
+  color: rgba(130, 130, 130, 1);
+  margin-top: 0vi;
+}
+
+.allsongs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7vi;
+}
+
+.singlesong {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2vi 5vi 50% auto;
+  grid-template-rows: 2.5vi 2.5vi;
+  justify-items: start;
+  align-items: center;
+}
+.listimg {
+  font-size: 1.2vi;
+  grid-row: 1 / span 2;
+}
+.songimg {
+  grid-row: 1 / span 2;
+}
+.songimg img {
+  height: 4vi;
+  width: 4vi;
+  border-radius: 0.7vi;
+}
+.songname {
+  color: rgba(51, 51, 51, 1);
+  font-weight: 700;
+  font-size: 1.2vi;
+}
+.songartist {
+  font-size: 1vi;
+
+  color: rgba(79, 79, 79, 1);
+}
+.songduration {
+  font-size: 1vi;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 800;
+}
+.songyear {
+  font-size: 1vi;
+
+  color: rgba(130, 130, 130, 1);
+}
+.songnameactive {
+  color: rgba(206, 3, 106, 1);
+}
+
+.footer {
+  width: 100%;
+
+  font-size: 1vi;
+  line-height: 10px;
+  text-align: center;
+}
+
+/* ========================================= */
+
+.dataframe {
+  background-color: rgba(243, 243, 243, 1);
+  border-radius: 1vi;
+  text-align: center;
+}
+
+.songpalyimg img {
+  width: 32vi;
+  height: 25vi;
+  border-radius: 2vi;
+  margin: 3.5vi auto 0vi;
+}
+
+.songplayname {
+  color: rgba(51, 51, 51, 1);
+  font-size: 1.5vi;
+  font-weight: 600;
+}
+.songplayartist {
+  color: rgba(79, 79, 79, 1);
+  font-size: 1vi;
+  font-weight: 400;
+  margin-top: 0.1vi;
+}
+.songplayduration {
+  width: 30vi;
+  margin: 0vi auto;
+}
+.songplayduration .starttime {
+  color: rgba(130, 130, 130, 1);
+  font-size: 1vi;
+  font-weight: 400;
+  float: left;
+}
+.songplayduration .endtime {
+  float: right;
+  color: rgba(130, 130, 130, 1);
+  font-size: 1vi;
+  font-weight: 400;
+}
+.songtime {
+  width: 100%;
+}
+.songplaycontrol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(206, 3, 106, 1);
+  width: 20vi;
+  height: 4vi;
+  margin: 0vi auto;
+  overflow: hidden;
+}
+.songplaycontrol i {
+  font-size: 2.7vi;
+}
+
+.volumeandplayback {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.volumeplaycontrol {
+  align-items: center;
+  justify-content: center;
+  color: rgba(130, 130, 130, 1);
+  margin: 1vi auto;
+  width: 30vi;
+  display: flex;
+}
+.volumeplaycontrol input {
+  width: 40%;
+  margin: 0vi;
+}
+.volumeplaycontrol i {
+  font-size: 1.7vi;
+  padding: 0vi 1vi;
+}
+.hide {
+  display: none;
+}
+.active {
+  color: rgba(206, 3, 106, 1);
+}
+.mobile {
+  display: none;
+}
+
+.shuffulbtn,
+.repeatonebtn {
+  font-size: 1vi;
+
+  color: rgba(206, 3, 105, 0.715);
+}
+
+.playbackcontrol {
+  width: 19vi;
+}
+.playbackcontrol select {
+  outline: none;
+  height: 2vi;
+  width: 13vi;
+  font-weight: 900;
+  border-radius: 2vi;
+  padding-left: 2vi;
+  border: none;
+  background-color: #ece4f9;
+  padding-right: 0.6vi;
+}
+.plackbackicon {
+  position: relative;
+  left: 30px;
+  font-size: 1vi;
+}
+
+.musicicon {
+  height: 10vi;
+  font-size: x-large;
+  margin: 2vi 0 0;
+}
+.musicicon span {
+  float: left;
+  padding-left: 1vi;
+}
+.musicicon i {
+  float: right;
+  margin-top: 1vi;
+  padding-right: 1vi;
+}
+
+.modalwin {
+  width: 100%;
+  height: 99.9vh;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.overview {
+  position: absolute;
+  top: 0px;
+  left: 25%;
+  z-index: 2;
+  width: 50%;
+  height: 45vi;
+  border-radius: 1vi;
+  margin: 1vi auto;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 1);
+}
+.modalheader {
+  background-color: rgb(177, 177, 177);
+  overflow: hidden;
+  height: 17vi;
+}
+
+.modalheader img {
+  width: 100%;
+  height: 37vi;
+}
+.verifiedicon {
+  position: relative;
+  top: -28vi;
+  left: -1vi;
+  width: 3vi;
+  height: 2vi;
+}
+.verifiedicon :first-child {
+  background: -webkit-linear-gradient(122.33deg, #53e0ff 30.62%, #1e94e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2vi;
+}
+.verifiedicon :nth-child(2) {
+  position: relative;
+  color: white;
+  font-size: 1vi;
+  left: -1.5vi;
+  top: -0.4vi;
+}
+.modal-artist-verified {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.4vi;
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: -30.5vi;
+  left: 3.5vi;
+}
+.modal-artist-name {
+  color: rgba(246, 246, 246, 1);
+  font-size: 2.8vi;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 700;
+  position: relative;
+  top: -30.5vi;
+  left: 1.5vi;
+}
+.modalflex {
+  display: flex;
+}
+.followers {
+  text-align: left;
+  z-index: 1;
+  flex: 25%;
+  font-size: 1vi;
+  margin: 1vi 0px 0px 0px;
+  height: 30vi;
+}
+.numbers {
+  color: rgba(18, 18, 18, 1);
+  font-size: 2vi;
+  padding: 0px;
+  margin: 1vi;
+  font-weight: 700;
+}
+.follow {
+  margin-top: -1vi;
+  position: relative;
+  left: 1vi;
+}
+.description {
+  font-size: 1vi;
+  flex: 67%;
+  padding: 1vi;
+}
+.closemodal {
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  top: -37vi;
+  left: 46vi;
+  width: 1vi;
+  font-size: 2vi;
+}
+.active {
+  color: rgba(206, 3, 106, 1);
+}
+
+@media only screen and (max-width: 550px) {
+  .mobile {
+    display: block;
+  }
+  .notmobile {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+  }
+  .dataframe,
+  .navframe {
+    margin: 0;
+  }
+  .navframe {
+    margin-top: -5vi;
+  }
+  .songpalyimg img {
+    width: 85vi;
+    height: 63vi;
+  }
+  .songplayname {
+    margin-top: 1vi;
+    font-size: 7vi;
+  }
+  .songplayartist {
+    font-size: 4vi;
+  }
+  .songplayduration {
+    width: 80vi;
+    height: 10vi;
+  }
+  input[type="range"] {
+    --thumb-height: 3vi;
+    --track-height: 1vi;
+    --clip-edges: 0.125vi;
+  }
+  .songplayduration .starttime,
+  .songplayduration .endtime {
+    font-size: 3vi;
+  }
+  .songtime {
+    position: relative;
+    top: -1vi;
+  }
+  .songplaycontrol {
+    width: 75vi;
+    height: 10vi;
+  }
+  .songplaycontrol i {
+    font-size: 8vi;
+  }
+  .volumeplaycontrol {
+    margin-top: 3vi;
+    width: 95vi;
+  }
+  .volumeplaycontrol i {
+    font-size: 3.5vi;
+    padding: 1vi 3vi;
+  }
+
+  .songartist {
+    font-size: 2.5vi;
+  }
+  .singlesong {
+    grid-template-rows: 5.5vi 5.5vi;
+
+    grid-template-columns: 5vi 10vi 58% auto;
+    height: 12vi;
+  }
+  .listimg {
+    font-size: 3vi;
+  }
+  .songimg img {
+    height: 9vi;
+    width: 9vi;
+  }
+  .songname {
+    font-size: 3.7vi;
+  }
+  .songduration {
+    font-size: 3vi;
+  }
+  .songyear {
+    font-size: 3vi;
+  }
+  .footer {
+    font-size: 3vi;
+  }
+  .playbackcontrol {
+    width: 50%;
+    position: relative;
+    top: 10vi;
+    left: 15vi;
+  }
+  .playbackcontrol select {
+    padding-left: 5.5vi;
+    height: 6vi;
+    width: 43vi;
+  }
+  .plackbackicon {
+    left: 27px;
+    font-size: 3vi;
+  }
+  .overview {
+    top: 40vi;
+    left: 13%;
+    width: 75%;
+    height: 64vi;
+  }
+  .modalheader {
+    height: 28vi;
+  }
+  .modalheader img {
+    height: 45vi;
+  }
+  .closemodal {
+    top: -45vi;
+    left: 70vi;
+    font-size: 3vi;
+  }
+  .verifiedicon {
+    top: -28vi;
+    left: -3vi;
+  }
+  .modal-artist-verified {
+    top: -31.2vi;
+    left: 3.5vi;
+  }
+  .followers {
+    font-size: 2vi;
+  }
+  .numbers {
+    font-size: 3vi;
+  }
+  .description {
+    font-size: 2vi;
+    overflow: auto;
+  }
+}

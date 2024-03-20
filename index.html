@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio src="" id="audio-source"></audio>
+
+    <div class="container rooter">
+      <div class="row">
+        <div class="navframe">
+          <nav class="notmobile">
+            <img class="img1" src="./assets/images/wsalogo1.png" alt="" />
+            <img class="img2" src="./assets/images/wsalogo2.png" alt="" />
+          </nav>
+
+          <div class="title">
+            <h2 class="h2">Track list</h2>
+            <p class="h6">playing next</p>
+          </div>
+
+          <div class="allsongs"></div>
+          <footer class="footer mt-4">
+            &copy;2024 WSA. All Rights Reserved.
+          </footer>
+        </div>
+
+        <div class="dataframe">
+          <div class="mobile musicicon">
+            <span>Music</span><i class="fa-solid fa-gear"></i>
+          </div>
+          <div class="songpalyimg">
+            <img src="./assets/images/cover1.png" alt="" class="coverImg" />
+          </div>
+          <div class="songplayname">Eragai pole</div>
+          <div class="songplayartist">yuvan sankar raja</div>
+          <div class="songplayduration">
+            <span class="starttime">00:00</span
+            ><span class="endtime">00:00</span
+            ><input
+              type="range"
+              name="songtime"
+              class="songtime music-seek-bar"
+              id="songtime"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div class="songplaycontrol">
+            <i class="shuffulbtn"><i class="fa-solid fa-shuffle"></i></i>
+            <i class="backwardbtn"><i class="fa-solid fa-backward-step"></i></i>
+            <i class="playbtn"><i class="fa-solid fa-circle-play"></i></i>
+            <i class="pausebtn hide"
+              ><i class="fa-solid fa-circle-pause"></i
+            ></i>
+            <i class="forwardbtn"><i class="fa-solid fa-forward-step"></i></i>
+            <i class="repeatonebtn"><i class="fa-solid fa-repeat"></i></i>
+          </div>
+          <div class="volumeandplayback">
+            <div class="volumeplaycontrol notmobile">
+              <i class="fa-solid fa-volume-low"></i>
+              <input
+                type="range"
+                name="songvolume"
+                class="songvolume volume-seek-bar"
+                min="0"
+                max="1"
+                step="0.10"
+              />
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="playbackcontrol">
+              <i class="plackbackicon"
+                ><i class="fa-solid fa-headphones"></i
+              ></i>
+              <select class="playback">
+                <option value="" hidden>
+                  <i class="fa-solid fa-headphones"></i>Playback Speed
+                </option>
+
+                <option value="2">2 X</option>
+
+                <option value="1.50">1.50 X</option>
+                <option value="1.25">1.25 X</option>
+                <option value="1">Normal</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalwin hide"></div>
+    <div class="overview hide">
+      <div class="modalheader">
+        <img class="modalimage" src="" alt="" />
+        <i class="closemodal"> <i class="fa-regular fa-circle-xmark"></i></i>
+        <i class="verifiedicon"
+          ><i class="fa-solid fa-certificate"></i
+          ><i class="fa-solid fa-check"></i
+        ></i>
+        <p class="modal-artist-verified">Verified Artist</p>
+        <p class="modal-artist-name">asdfghjk</p>
+      </div>
+      <div class="modalflex">
+        <div class="followers">
+          <p class="numbers count1">3,45,678</p>
+          <p class="follow">followers</p>
+          <p class="numbers count2">3,45,678</p>
+          <p class="follow">Monthly Listener</p>
+        </div>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+            itaque, numquam a aliquid possimus reprehenderit nemo magnam.
+            Doloribus cum rerum architecto vitae, eius sapiente voluptatibus
+            dolorum numquam quidem, deserunt delectus?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            sapiente nostrum quae qui vitae enim delectus,
+          </p>
+          <p>
+            sunt amet consectetur cumque ducimus saepe eveniet beatae dolores
+            esse consequatur hic voluptate ab!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="musiclist.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
