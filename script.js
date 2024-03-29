@@ -141,6 +141,7 @@ playbackBtn.addEventListener("change", (e) => {
 });
 
 queue.forEach((item, i) => {
+  console.log();
   item.addEventListener("click", () => {
     setMusic(i);
     playBtn.click();
