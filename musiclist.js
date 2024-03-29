@@ -10,7 +10,7 @@ const markUp = `${songs.map((song) => {
   <img src=${song.cover} alt="" />
 </div>
 <div class="songname active">${song.name}</div>
-<div class="songduration"></div>
+<div class="songduration">${song.duration}</div>
 <div class="songartist">${song.artist}</div>
 <div class="songyear">${song.year}</div>
 </div>`;

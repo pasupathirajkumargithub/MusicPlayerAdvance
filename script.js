@@ -134,19 +134,13 @@ setInterval(() => {
       forwardBtn.click();
     }
   }
-}, 510);
+}, 500);
 
 playbackBtn.addEventListener("change", (e) => {
   playbackSpeed = e.target.value;
 });
 
 queue.forEach((item, i) => {
-  let audio = new Audio();
-  audio.src = songs[i].path;
-  setTimeout(() => {
-    songDuration[i].innerHTML = formteTime(audio.duration);
-  }, 500);
-
   item.addEventListener("click", () => {
     setMusic(i);
     playBtn.click();

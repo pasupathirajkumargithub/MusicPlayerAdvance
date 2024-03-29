@@ -123,15 +123,15 @@ nav .img2 {
 }
 
 .songpalyimg img {
-  width: 32vi;
-  height: 25vi;
+  width: 30vi;
+  height: 23vi;
   border-radius: 2vi;
   margin: 3.5vi auto 0vi;
 }
 
 .songplayname {
   color: rgba(51, 51, 51, 1);
-  font-size: 1.5vi;
+  font-size: 1.7vi;
   font-weight: 600;
 }
 .songplayartist {
@@ -141,7 +141,7 @@ nav .img2 {
   margin-top: 0.1vi;
 }
 .songplayduration {
-  width: 30vi;
+  width: 28vi;
   margin: 0vi auto;
 }
 .songplayduration .starttime {
@@ -169,7 +169,8 @@ nav .img2 {
   margin: 0vi auto;
   overflow: hidden;
 }
-.songplaycontrol i {
+
+.songplaycontrol span {
   font-size: 2.7vi;
 }
 
@@ -209,8 +210,7 @@ nav .img2 {
 .shuffulbtn,
 .repeatonebtn {
   font-size: 1vi;
-
-  color: rgba(206, 3, 105, 0.715);
+  color: rgba(195, 9, 102, 0.282);
 }
 
 .playbackcontrol {
@@ -218,11 +218,12 @@ nav .img2 {
 }
 .playbackcontrol select {
   outline: none;
-  height: 2vi;
-  width: 13vi;
+  font-size: 1.3vi;
+  height: 3vi;
+  width: 15vi;
   font-weight: 900;
   border-radius: 2vi;
-  padding-left: 2vi;
+  padding-left: 2.3vi;
   border: none;
   background-color: #ece4f9;
   padding-right: 0.6vi;
@@ -230,7 +231,7 @@ nav .img2 {
 .plackbackicon {
   position: relative;
   left: 30px;
-  font-size: 1vi;
+  font-size: 1.3vi;
 }
 
 .musicicon {
@@ -265,9 +266,9 @@ nav .img2 {
   left: 25%;
   z-index: 2;
   width: 50%;
-  height: 45vi;
+  height: 40vi;
   border-radius: 1vi;
-  margin: 1vi auto;
+  margin: 2vi auto;
   overflow: hidden;
   background: rgba(255, 255, 255, 1);
 }
@@ -357,6 +358,7 @@ nav .img2 {
   width: 1vi;
   font-size: 2vi;
 }
+
 .active {
   color: rgba(206, 3, 106, 1);
 }
@@ -454,17 +456,18 @@ nav .img2 {
   .playbackcontrol {
     width: 50%;
     position: relative;
-    top: 10vi;
+    top: 13vi;
     left: 15vi;
   }
   .playbackcontrol select {
     padding-left: 5.5vi;
-    height: 6vi;
-    width: 43vi;
+    font-size: 3vi;
+    height: 7vi;
+    width: 30vi;
   }
   .plackbackicon {
     left: 27px;
-    font-size: 3vi;
+    font-size: 3.5vi;
   }
   .overview {
     top: 40vi;
